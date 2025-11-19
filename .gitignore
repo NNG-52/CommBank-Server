@@ -405,4 +405,4 @@ ASALocalRun/
 .localhistory/
 
 # secrets
-CommBank-Server/Secrets.json
+./CommBank-Server/Secrets.json
