@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("Secrets.json");
 
 var mongoClient = new MongoClient(builder.Configuration.GetConnectionString("CommBank"));
-var mongoDatabase = mongoClient.GetDatabase("CommBank");
+var mongoDatabase = mongoClient.GetDatabase("test"); // had to change from "Commbank" to "test" for 200 OK response, otherwise 404 Not Found
 
 IAccountsService accountsService = new AccountsService(mongoDatabase);
 IAuthService authService = new AuthService(mongoDatabase);

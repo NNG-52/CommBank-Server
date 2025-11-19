@@ -1,0 +1,2 @@
+- Had to add global.json to specify the .NET SDK version: (6.0.428) to use for this project, as the dev machine was running .NET 10
+- ServerResponse.json contains the response from server to submit for task 1
