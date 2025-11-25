@@ -23,7 +23,7 @@ public class GoalControllerTests
         var users = collections.GetUsers();
         IGoalsService goalsService = new FakeGoalsService(goals, goals[0]);
         IUsersService usersService = new FakeUsersService(users, users[0]);
-        GoalController controller = new(goalsService, usersService);
+        GoalController controller = new GoalController(goalsService, usersService);
 
         // Act
         var httpContext = new Microsoft.AspNetCore.Http.DefaultHttpContext();
@@ -49,7 +49,7 @@ public class GoalControllerTests
         var users = collections.GetUsers();
         IGoalsService goalsService = new FakeGoalsService(goals, goals[0]);
         IUsersService usersService = new FakeUsersService(users, users[0]);
-        GoalController controller = new(goalsService, usersService);
+        GoalController controller = new GoalController(goalsService, usersService);
 
         // Act
         var httpContext = new Microsoft.AspNetCore.Http.DefaultHttpContext();
@@ -70,7 +70,7 @@ public class GoalControllerTests
         var users = collections.GetUsers();
         IGoalsService goalsService = new FakeGoalsService(goals, goals[0]);
         IUsersService usersService = new FakeUsersService(users, users[0]);
-        GoalController controller = new(goalsService, usersService);
+        GoalController controller = new GoalController(goalsService, usersService);
 
         // Act
         var httpContext = new Microsoft.AspNetCore.Http.DefaultHttpContext();
